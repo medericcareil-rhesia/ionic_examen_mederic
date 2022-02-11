@@ -1,0 +1,32 @@
+<app-header></app-header>
+
+<ion-content>
+
+    <div class="content" *ngIf="works; else empty">
+        <ion-card *ngFor="let work of works" [routerLink]="['/show', work.id]">
+            <ion-card-header>
+                <img [src]="work.picture" [alt]="work.name">
+                <ion-card-title>
+                    {{ work.name }}
+                </ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+                <p><span>From :</span> {{ work.location }}</p>
+                <p><span>Ajoutée le :</span> {{ work.createdAt }}</p>
+            </ion-card-content>
+        </ion-card>
+    </div>
+
+    <ng-template #empty>
+        <div class="empty-content">
+            <p>Auncune oeuvres disponibles</p>
+        </div>
+    </ng-template>
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button routerLink="/add" color="tertiary">
+            <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
+
+</ion-content>

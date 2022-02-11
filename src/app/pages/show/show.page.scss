@@ -1,0 +1,21 @@
+ion-content {
+    .content {
+        h4 {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        p { 
+            margin-left: 10px;
+            span {
+                font-weight: bold;
+            }
+        } 
+
+        ion-button {
+            margin-left: 10px;
+        }
+
+    }
+}

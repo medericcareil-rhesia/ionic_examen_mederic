@@ -1,0 +1,45 @@
+{
+  "works": [
+    {
+      "id": 1,
+      "name": "Free street",
+      "picture": "https://lemag.ales.fr/wp-content/uploads/2019/03/atelier-street-art-1280x720.jpg",
+      "location": "New York",
+      "createdAt": "01/05/2015"
+    },
+    {
+      "id": 2,
+      "name": "Concerto from Lisa",
+      "picture": "https://img.20mn.fr/BRVy6D2tSgyPv4P3mlWu0Q/768x492_oeuvres-street-artist-montpellierain-efix.jpg",
+      "location": "Paris",
+      "createdAt": "08/10/2017"
+    },
+    {
+      "id": 3,
+      "name": "Mad bird",
+      "picture": "https://1.bp.blogspot.com/-obgXyzsZj_4/XsL6AL1uQiI/AAAAAAABHLM/5lfGuUkLAJgiKRQ932ooSVqHs3uGW1QsgCLcBGAsYHQ/s1600/retro-graffitism-street-art-portrait-25.jpg",
+      "location": "Berlin",
+      "createdAt": "25/06/2013"
+    },
+    {
+      "id": 4,
+      "name": "Young rebirth",
+      "picture": "https://static.actu.fr/uploads/2020/05/sunra-streetart-montpellier-confinement-02.jpg",
+      "location": "Montpellier",
+      "createdAt": "03/07/2015"
+    },
+    {
+      "id": 5,
+      "name": "Geisha",
+      "picture": "https://dujub.files.wordpress.com/2012/08/if-i-was-today.jpg",
+      "location": "Tokyo",
+      "createdAt": "18/03/2015"
+    },
+    {
+      "name": "fdfd",
+      "location": "fdfdfdf",
+      "picture": "https://dujub.files.wordpress.com/2012/08/if-i-was-today.jpg",
+      "id": 6
+    }
+  ]
+}

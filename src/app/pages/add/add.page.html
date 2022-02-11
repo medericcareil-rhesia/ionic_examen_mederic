@@ -1,0 +1,30 @@
+<app-header></app-header>
+
+<ion-content>
+    
+    <form #workForm="ngForm" (ngSubmit)="add()">
+        <ion-item>
+            <ion-label position="floating">Nom</ion-label>
+            <ion-input [(ngModel)]="work.name" name="name" required minlength="3" maxlength="60" #name="ngModel">
+            </ion-input>
+        </ion-item>
+        <p class="error" *ngIf="!name.valid && name.touched" message="Vous devez saisir un nom entre 3 et 60 caractères"></p>
+
+        <ion-item>
+            <ion-label position="floating">URL de l'image</ion-label>
+            <ion-input [(ngModel)]="work.picture" name="picture" required pattern="https://.*" #picture="ngModel">
+            </ion-input>
+        </ion-item>
+        <p class="error" *ngIf="!picture.valid && picture.touched" message="Vous devez saisir une URL valide"></p>
+
+        <ion-item>
+            <ion-label position="floating">Localisation</ion-label>
+            <ion-input [(ngModel)]="work.location" name="location" required #location="ngModel">
+            </ion-input>
+        </ion-item>
+        <p class="error" *ngIf="!location.valid && location.touched" message="Vous devez saisir une localisation"></p>
+
+        <ion-button color="tertiary" type="submit" size="large" [disabled]="!workForm.form.valid">Ajouter</ion-button>
+    </form>
+
+</ion-content>

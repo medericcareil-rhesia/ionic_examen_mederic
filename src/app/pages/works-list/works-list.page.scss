@@ -1,0 +1,25 @@
+ion-card-content {
+    display: flex;
+    flex-direction: column;
+
+    span {
+        font-weight: 800;
+    }
+
+    .empty-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+        
+        ion-icon {
+            zoom: 1.3;
+        }
+    }
+}

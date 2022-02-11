@@ -1,0 +1,24 @@
+<app-header></app-header>
+
+<ion-content>
+  
+    <div class="content" *ngIf="work; else error">
+        <img [src]="work.picture" [alt]="work.name">
+
+        <h4>{{ work.name }}</h4>
+
+        <p><span>From : </span>{{ work.location }}</p>
+        <p><span>Ajoutée le : </span>{{ work.createdAt }}</p>
+
+        <ion-button color="tertiary">
+            Ajouter aux favoris
+        </ion-button>
+    </div>
+
+    <ng-template #empty>
+        <div class="error-content">
+            <p>Une erreur est survenu</p>
+        </div>
+    </ng-template>
+
+</ion-content>
